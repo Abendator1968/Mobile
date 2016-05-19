@@ -1,0 +1,40 @@
+<!--
+    Puede encontrar definiciones de explorador existentes en
+    <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers
+-->
+<browsers>
+    <browser id="Nexus" parentID="Chrome">
+        <identification>
+            <userAgent match="Nexus" />
+        </identification>
+
+        <capture>
+            <userAgent match="Nexus (?'model'\d+)" />
+        </capture>
+
+        <capabilities>
+            <capability name="MobileDeviceManufacturer" value="Google" />
+            <capability name="MobileDeviceModel" value="Nexus ${model}" />
+            <capability name="isMobileDevice" value="true" />
+            <!--<capability name="browser" value="My New Browser" />
+            <capability name="version" value="${version}" />-->
+        </capabilities>
+    </browser>
+
+    <browser id="Nexus7" parentID="Nexus">
+        <identification>
+            <userAgent match="Nexus 7" />
+        </identification>
+
+        <capabilities>
+          <capability name="ScreenPixelsHeight" value="1900" />
+          <capability name="ScreenPixelsWidth" value="1200" />
+        </capabilities>
+    </browser>
+  
+    <!--<browser refID="Mozilla">
+        <capabilities>
+            <capability name="xml" value="true" />
+        </capabilities>
+    </browser>-->
+</browsers>

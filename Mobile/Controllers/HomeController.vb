@@ -19,11 +19,11 @@ Namespace Mobile.Controllers
 
         End Function
 
-        'Public Function Browser() As ActionResult
+        Public Function Browser() As ActionResult
 
-        '    Return View()
+            Return View()
 
-        'End Function
+        End Function
 
     End Class
 

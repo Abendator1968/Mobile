@@ -128,6 +128,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="App_Browsers\Nexus.browser" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Compile Include="Models\Programmer.vb" />
     <Content Include="Scripts\bootstrap.js" />
@@ -183,6 +184,7 @@
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Home\Index.vbhtml" />
+    <None Include="Views\Home\Browser.vbhtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
